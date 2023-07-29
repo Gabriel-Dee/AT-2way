@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  h1 Register for the Event
+  form(action="/register", method="post")
+    label(for="name") Name:
+    input(type="text", id="name", name="name", required)
+    br
+
+    label(for="email") Email:
+    input(type="email", id="email", name="email", required)
+    br
+
+    label(for="phone") Phone Number:
+    input(type="text", id="phone", name="phone", required)
+    br
+
+    input(type="submit", value="Register")
